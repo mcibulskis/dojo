@@ -1,3 +1,5 @@
+package v1
+
 class PriceCalculator {
 
   def calculatePrice(books: Seq[Book]): Double = {
