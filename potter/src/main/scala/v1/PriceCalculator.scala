@@ -3,6 +3,18 @@ package v1
 class PriceCalculator {
 
   def calculatePrice(books: Seq[Book]): Double = {
+    createSubsets(books).foldLeft(0) {
+      calcualteSubsetPrice(_)
+    }
+  }
+
+  def createSubsets(books: Seq[Book]): Seq[Seq[Book]] = {
+    val seq1 = books.distinct.toList
+    val seq2 = books.toList - seq1
+    List(seq1, seq2)
+  }
+
+  def calculateSubsetPrice(books: Seq[Book]): Double = {
     val basePrice = calculateBasePrice(books)
 
     (books.distinct.size) match {

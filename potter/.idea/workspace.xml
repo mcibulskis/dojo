@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4ab31216-8a9d-4c89-8ee0-8e05babe9829" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/v1/PriceCalculatorSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/v1/PriceCalculatorSpec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/v1/PriceCalculator.scala" afterPath="$PROJECT_DIR$/src/main/scala/v1/PriceCalculator.scala" />
     </list>
     <ignored path="potter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,19 +61,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PriceCalculatorSpec.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PriceCalculatorSpec.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/v1/PriceCalculatorSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="78" selection-start="661" selection-end="661" vertical-scroll-proportion="0.3653846">
+            <state line="20" column="78" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PriceCalculator.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PriceCalculator.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/v1/PriceCalculator.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+            <state line="12" column="28" selection-start="291" selection-end="291" vertical-scroll-proportion="0.34615386">
               <folding />
             </state>
           </provider>
@@ -154,8 +154,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/v1/Book3.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/v1/Book4.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/v1/Book5.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/v1/PriceCalculator.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/v1/PriceCalculatorSpec.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/v1/PriceCalculator.scala" />
       </list>
     </option>
   </component>
@@ -522,7 +522,11 @@
       <created>1346860881861</created>
       <updated>1346860881861</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="group of 2 and group of 1">
+      <created>1346861790921</created>
+      <updated>1346861790921</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -591,7 +595,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="five copies of the same book" />
+    <option name="LAST_COMMIT_MESSAGE" value="group of 2 and group of 1" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -609,6 +613,7 @@
     <MESSAGE value="single copy of four different books" />
     <MESSAGE value="single copy of five different books" />
     <MESSAGE value="five copies of the same book" />
+    <MESSAGE value="group of 2 and group of 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -659,16 +664,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/v1/PriceCalculator.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/v1/PriceCalculatorSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+        <state line="20" column="78" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/v1/PriceCalculatorSpec.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/v1/PriceCalculator.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="78" selection-start="661" selection-end="661" vertical-scroll-proportion="0.3653846">
+        <state line="12" column="28" selection-start="291" selection-end="291" vertical-scroll-proportion="0.34615386">
           <folding />
         </state>
       </provider>
