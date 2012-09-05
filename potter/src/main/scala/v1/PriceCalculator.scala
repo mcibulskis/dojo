@@ -6,6 +6,7 @@ class PriceCalculator {
     val basePrice = calculateBasePrice(books)
 
     (books.distinct.size) match {
+      case(5) => basePrice * .75
       case(4) => basePrice * .80
       case(3) => basePrice * .90
       case(2) => basePrice * .95
