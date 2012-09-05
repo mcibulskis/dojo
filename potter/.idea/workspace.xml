@@ -64,7 +64,7 @@
       <file leaf-file-name="PriceCalculatorSpec.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/v1/PriceCalculatorSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="79" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.91346157">
+            <state line="20" column="78" selection-start="661" selection-end="661" vertical-scroll-proportion="0.3653846">
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="PriceCalculator.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/v1/PriceCalculator.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="17" selection-start="412" selection-end="425" vertical-scroll-proportion="0.0">
+            <state line="18" column="24" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -518,7 +518,11 @@
       <created>1346860735563</created>
       <updated>1346860735563</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="five copies of the same book">
+      <created>1346860881861</created>
+      <updated>1346860881861</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -587,7 +591,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="single copy of five different books" />
+    <option name="LAST_COMMIT_MESSAGE" value="five copies of the same book" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -604,6 +608,7 @@
     <MESSAGE value="single copy of three different books" />
     <MESSAGE value="single copy of four different books" />
     <MESSAGE value="single copy of five different books" />
+    <MESSAGE value="five copies of the same book" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -656,14 +661,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/v1/PriceCalculator.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="412" selection-end="425" vertical-scroll-proportion="0.0">
+        <state line="18" column="24" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/v1/PriceCalculatorSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="79" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.91346157">
+        <state line="20" column="78" selection-start="661" selection-end="661" vertical-scroll-proportion="0.3653846">
           <folding />
         </state>
       </provider>
