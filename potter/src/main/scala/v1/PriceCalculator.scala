@@ -5,7 +5,11 @@ class PriceCalculator {
   def calculatePrice(books: Seq[Book]): Double = {
     val basePrice = calculateBasePrice(books)
 
-    if (books.distinct.size > 1) basePrice * .95 else basePrice
+    (books.distinct.size) match {
+      case(3) => basePrice * .90
+      case(2) => basePrice * .95
+      case(_) => basePrice
+    }
   }
 
   private def calculateBasePrice(books: scala.Seq[Book]): Double = {
