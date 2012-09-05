@@ -23,4 +23,8 @@ class PriceCalculatorSpec extends FlatSpec with ShouldMatchers {
   it should "price a single copy of three different books for a total of 21.60" in {
     impl.calculatePrice(List(Book1, Book2, Book3)) should equal(21.60)
   }
+
+  it should "price a single copy of four different books for a total of 25.60" in {
+    impl.calculatePrice(List(Book1, Book2, Book3, Book4)) should equal(25.60)
+  }
 }
