@@ -23,10 +23,15 @@ class PriceCalculator {
     if (seq2.size > 0) {
       buffer += seq2
     }
+
+//    if (seq2.size > 5) {
+//      var seq3 = seq2.foldLeft(seq2)((r,c) => r += createSubsets(r))
+//    }
+
     buffer.toList
   }
 
-  def removeBook(num: Book, list: List[Book]) = list diff List(num)
+  def removeBook(book: Book, list: List[Book]) = list diff List(book)
 
   def calculateSubsetPrice(books: Seq[Book]): Double = {
     val basePrice = calculateBasePrice(books)
