@@ -19,8 +19,10 @@ class PriceCalculator {
     val seq1 = books.distinct.toList
     buffer += seq1
 
-    val seq2 = seq1.foldLeft(books)((r, c) => removeBook(c, r.toList))
-    buffer += seq2
+    var seq2 = seq1.foldLeft(books)((r, c) => removeBook(c, r.toList))
+    if (seq2.size > 0) {
+      buffer += seq2
+    }
     buffer.toList
   }
 
