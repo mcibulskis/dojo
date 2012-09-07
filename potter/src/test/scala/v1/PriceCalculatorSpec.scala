@@ -39,4 +39,28 @@ class PriceCalculatorSpec extends FlatSpec with ShouldMatchers {
   it should "create a group of 2 and a group of 1" in {
     impl.calculatePrice(List(Book1, Book1, Book2)) should equal(23.20)
   }
+
+  it should "create a group of 2 and two groups of 1" in {
+    impl.calculatePrice(List(Book1, Book1, Book2, Book1)) should equal(31.20)
+
+  }
+  it should "create a group of 2 and a group of 2" in {
+    impl.calculatePrice(List(Book1, Book1, Book2, Book2)) should equal(30.40)
+  }
+
+  it should "should handle 1, 1, 2, 2, 3, 3" in {
+    impl.calculatePrice(List(Book1, Book1, Book2, Book2, Book3, Book3)) should equal(43.20)
+  }
+
+  it should "should handle 1, 1, 2, 2, 3, 3, 4, 5 (optimistic grouping... not aggresive grouping" in {
+    impl.calculatePrice(List(Book1, Book1, Book2, Book2, Book3, Book3, Book4, Book5)) should equal(51.20)
+  }
+
+  it should "should handle 1, 2, 2, 3, 4, 5" in {
+    impl.calculatePrice(List(Book1, Book2, Book2, Book3, Book4, Book5)) should equal(38.00)
+  }
+  
+  it should "should handle 1, 2, 3, 1, 2, 3, 1, 2, 3 (false positive)" in {
+    impl.calculatePrice(List(Book1, Book2, Book3, Book1, Book2, Book3, Book1, Book2, Book3)) should equal(64.80)
+  }
 }

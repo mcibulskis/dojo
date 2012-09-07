@@ -6,32 +6,39 @@ class PriceCalculator {
 
   def calculatePrice(books: Seq[Book]): Double = {
     val sequence = createSubsets(books)
-    0.0
+    println(sequence)
+    
+    val x = sequence.foldLeft(0.0)((r, c) => r + calculateSubsetPrice(c))
 
-//    val x = sequence.foldLeft(0)((r, c) => calculateSubsetPrice(sequence))
-//    x
+    ("%09.3f".format(x)).toDouble
+
   }
 
   def createSubsets(books: Seq[Book]): Seq[Seq[Book]] = {
     var buffer = new ListBuffer[Seq[Book]]
     val seq1 = books.distinct.toList
     buffer += seq1
-    val seq2 = books.toList -- seq1
-    buffer += seq2
 
+    val seq2 = seq1.foldLeft(books)((r, c) => removeBook(c, r.toList))
+    buffer += seq2
     buffer.toList
   }
+
+  def removeBook(num: Book, list: List[Book]) = list diff List(num)
 
   def calculateSubsetPrice(books: Seq[Book]): Double = {
     val basePrice = calculateBasePrice(books)
 
-    (books.distinct.size) match {
-      case (5) => basePrice * .75
-      case (4) => basePrice * .80
-      case (3) => basePrice * .90
-      case (2) => basePrice * .95
-      case (_) => basePrice
-    }
+    val adjustedPrice =
+      (books.distinct.size) match {
+        case (5) => basePrice * .75
+        case (4) => basePrice * .80
+        case (3) => basePrice * .90
+        case (2) => basePrice * .95
+        case (_) => basePrice
+      }
+    
+    adjustedPrice
   }
 
   private def calculateBasePrice(books: Seq[Book]): Double = {
