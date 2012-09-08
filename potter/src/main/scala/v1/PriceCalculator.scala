@@ -21,12 +21,8 @@ class PriceCalculator {
 
     var seq2 = seq1.foldLeft(books)((r, c) => removeBook(c, r.toList))
     if (seq2.size > 0) {
-      buffer += seq2
+      buffer.appendAll(createSubsets(seq2))
     }
-
-//    if (seq2.size > 5) {
-//      var seq3 = seq2.foldLeft(seq2)((r,c) => r += createSubsets(r))
-//    }
 
     buffer.toList
   }
