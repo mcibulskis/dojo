@@ -5,9 +5,10 @@ import collection.mutable.ListBuffer
 class PriceCalculator {
 
   def calculatePrice(books: Seq[Book]): Double = {
-    val sequence = createSubsets(books)
+    val bookGroupings = createSubsets(books)
+    val optimizedBookGroupings = optimizeSubsets(bookGroupings)
 
-    val x = sequence.foldLeft(0.0)((r, c) => r + calculateSubsetPrice(c))
+    val x = optimizedBookGroupings.foldLeft(0.0)((r, c) => r + calculateSubsetPrice(c))
 
     ("%09.3f".format(x)).toDouble
 
@@ -26,6 +27,10 @@ class PriceCalculator {
     }
 
     buffer.toList
+  }
+
+  def optimizeSubsets(subsets: Seq[Seq[Book]]): Seq[Seq[Book]] = {
+    subsets
   }
 
   def removeBook(book: Book, list: List[Book]) = list diff List(book)
