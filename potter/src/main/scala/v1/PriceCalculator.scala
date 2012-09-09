@@ -6,8 +6,7 @@ class PriceCalculator {
 
   def calculatePrice(books: Seq[Book]): Double = {
     val sequence = createSubsets(books)
-    println(sequence)
-    
+
     val x = sequence.foldLeft(0.0)((r, c) => r + calculateSubsetPrice(c))
 
     ("%09.3f".format(x)).toDouble
@@ -15,12 +14,14 @@ class PriceCalculator {
   }
 
   def createSubsets(books: Seq[Book]): Seq[Seq[Book]] = {
+    if (books.isEmpty) return Seq()
+
     var buffer = new ListBuffer[Seq[Book]]
     val seq1 = books.distinct.toList
     buffer += seq1
 
     var seq2 = seq1.foldLeft(books)((r, c) => removeBook(c, r.toList))
-    if (seq2.size > 0) {
+    if (! seq2.isEmpty) {
       buffer.appendAll(createSubsets(seq2))
     }
 

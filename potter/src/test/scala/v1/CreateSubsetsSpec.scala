@@ -12,6 +12,10 @@ class CreateSubsetsSpec extends FlatSpec with ShouldMatchers {
     impl.createSubsets(Seq(Book1)) should equal(Seq(Seq(Book1)))
   }
 
+  it should "create no subsets when no books are in the list" in {
+    impl.createSubsets(Seq()) should equal(Seq())
+  }
+
   it should "should create four subsets when four of the same book in the list" in {
     impl.createSubsets(Seq(Book1, Book1, Book1, Book1)) should equal(Seq(Seq(Book1),Seq(Book1),Seq(Book1),Seq(Book1)))
   }
