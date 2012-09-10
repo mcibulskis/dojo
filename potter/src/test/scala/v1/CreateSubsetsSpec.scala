@@ -47,8 +47,4 @@ class CreateSubsetsSpec extends FlatSpec with ShouldMatchers {
   it should "create four subsets when four copies of three books exist" in {
     impl.createSubsets(Seq(Book1, Book2, Book3, Book1, Book2, Book3, Book1, Book2, Book3, Book1, Book2, Book3)) should equal(Seq(Seq(Book1, Book2, Book3), Seq(Book1, Book2, Book3), Seq(Book1, Book2, Book3), Seq(Book1, Book2, Book3)))
   }
-
-  it should "create two subsets of four instead of on subset of five and one subset of three" in {
-    impl.createSubsets(Seq(Book1, Book1, Book2, Book2, Book3, Book3, Book4, Book5)) should equal(Seq(Seq(Book1, Book2, Book3, Book4), Seq(Book1, Book2, Book3, Book5)))
-  }
 }
