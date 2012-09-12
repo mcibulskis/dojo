@@ -11,4 +11,8 @@ class RedPencilSpec extends FlatSpec with ShouldMatchers {
   it should "return false if the last price was effective for fewer than 30 days" in {
     impl.isRedPencilPromotion(12.00, 10.00, 29) should equal(false)
   }
+
+  it should "return true if the last price was effective for at least 30 days" in {
+    impl.isRedPencilPromotion(12.00, 10.00, 30) should equal(true)
+  }
 }
